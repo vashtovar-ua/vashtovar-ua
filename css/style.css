@@ -51,7 +51,7 @@ h6 {
   height: 100px;
 }
 header {
-  background-color: #066b2d;
+  background-color: #3e533f;
   position: fixed;
   z-index: 100;
   width: 100%;
@@ -149,7 +149,7 @@ nav li a:hover::after {
   background-color: white;
   padding: 15px 30px;
   border-radius: 8px;
-  color: #066b2d;
+  color: #3e533f;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   text-transform: uppercase;
@@ -333,7 +333,7 @@ nav li a:hover::after {
     overflow: hidden;
   }
   .mobile-content .mobile-content__header {
-    background-color: #066b2d;
+    background-color: #3e533f;
     padding: 10px 0px 10px;
     color: white;
     display: -webkit-box;
@@ -690,7 +690,7 @@ nav li a:hover::after {
   padding: 20px 0px;
 }
 .cta-headline {
-  background-color: #066b2d;
+  background-color: #3e533f;
   color: white;
   padding: 20px 0px;
   display: -webkit-box;
