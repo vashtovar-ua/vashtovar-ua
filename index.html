@@ -9,7 +9,7 @@
     <title>Питна система</title>
     <meta name="description"
         content="Питна система - забезпечує легкий та постійний доступ до води під час ходьби, бігу чи катання на велосипеді">
-    <meta name="facebook-domain-verification" content="rqcpoepn1p5jmcaowr8lfel2qwwimv">
+    <meta name="facebook-domain-verification" content="qs4v0ip3ivoyzd6jap2phaxjj6n786">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -52,7 +52,7 @@
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=147791958209234&amp;ev=PageView&amp;noscript=1"></noscript>
     <!-- End Meta Pixel Code -->
-
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body class="loader-active">
@@ -436,11 +436,7 @@
             <div class="row mt-1">
                 <div class="col-12">
                     <div class="video-block">
-                        <iframe src="https://youtu.be/yWA2QzhPOQs" title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/m7TWflN_ovk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -633,13 +629,13 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="order.php" method="post">
+                    <form action="" id="orderForm">
                         <h3 class="mb-3">Заповніть, будь ласка, форму нижче</h3>
-                        <input class="form-control form-control-lg" type="text" placeholder="Ваше ім'я" name="name"
+                        <input class="form-control form-control-lg" type="text" placeholder="Ваше ім'я" id="username" name="name"
                             required>
                         <input class="form-control form-control-lg mt-3" type="text" placeholder="Ваш номер телефону"
-                            name="phone" required>
-                        <button type="submit" class="btn-buy mt-5">
+                            name="phone" id="phone" required>
+                        <button type="submit" class="btn-buy mt-5 nav-buy-item" data-bs-toggle="modal" data-bs-target="#successOrderModal">
                             Зробити замовлення
                         </button>
 
@@ -648,6 +644,26 @@
                                 конфіденційності</a>
                         </span>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="successOrderModal" tabindex="-1" aria-labelledby="successOrderModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body success-order">
+                    <div class="top-bar">
+                        <i class="icon-ok-sign"></i>
+                      </div>
+                      <div class="bottom-bar">
+                        <h1>Успіх!</h1>
+                        <p>Дякуємо за замовлення!</p>
+                        <button data-bs-dismiss="modal">Закрити</button>
+                      </div>
                 </div>
             </div>
         </div>

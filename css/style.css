@@ -969,3 +969,71 @@ footer .footer__link:hover::after {
 }
 
 /* Slider */
+
+/* Modal success */
+@import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
+.success-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .success-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+.success-order .container {
+  box-shadow: 5px 5px 10px 2px #888;
+}
+
+.success-order .top-bar .icon-ok-sign {
+    color: forestgreen;
+    margin-top: 5px;
+    font-size: 13em;
+}
+
+.success-order .top-bar {
+  text-align: center;
+  width: 500px;
+  height: 300px;
+}
+
+.success-order .bottom-bar {
+  text-align: center;
+}
+.success-order .bottom-bar h1 {
+  color: #444;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+.success-order .bottom-bar p {
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+.success-order .bottom-bar button:hover {
+    background: #29CDB5;
+    color: white;
+  
+}
+.success-order .bottom-bar button {
+  background: white;
+  border: 3px solid #29CDB5;
+  color: #444;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  outline: none;
+  transition: all 0.3s ease-in;
+}

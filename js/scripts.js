@@ -48,4 +48,68 @@ $(document).ready(function(){
   });
 })
 
+/* Telegram bot code start */
 
+
+let tg = {
+  token: "5804584758:AAEYzuunbqyzQKEcO72yKwrpkauZC88Ftv0", // Your bot's token that got from @BotFather
+  chat_id: "5804584758" // The user's(that you want to send a message) telegram chat id
+}
+var telegramUrl = "https://api.telegram.org/bot" + tg.token;
+
+/**
+* By calling this function you can send message to a specific user()
+* @param {String} the text to send
+*
+*/
+function sendMessage(text)
+{
+  const url = `${telegramUrl}/sendMessage` // The url to request
+
+  const obj = {
+      text: text // The text to send
+  };
+
+  const xht = new XMLHttpRequest();
+  xht.open("POST", url, true);
+  xht.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+  xht.send(JSON.stringify(obj));
+}
+
+// Now you can send any text(even a form data) by calling sendMessage function.
+// For example if you want to send the 'hello', you can call that function like this:
+
+// sendMessage("hello");
+
+/* Telegram bot code end */
+/* Form submit start */
+
+
+let orderForm = document.getElementById("orderForm");
+
+orderForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  // getChat_id();
+
+  let username = document.getElementById("username");
+  let phone = document.getElementById("phone");
+
+  if (username.value == "" || phone.value == "") {
+    alert("Ensure you input a value in both fields!");
+  } else {
+    // perform operation with form input
+    const result = `
+    Ім'я: ${username.value}
+    Номер телефону: ${phone.value}
+    `;
+    console.log(result);
+    sendMessage(result);
+    $('#orderModal').modal('hide');
+    $('#successOrderModal').modal('show');
+
+    username.value = "";
+    phone.value = "";
+
+  }
+});
+/* Form submit end */
