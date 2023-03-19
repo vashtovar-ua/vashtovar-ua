@@ -21,7 +21,7 @@ $(window).scroll(function () {
   }
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
   $('.reviews_slider').slick({
     dots: false,
     infinite: true,
@@ -29,8 +29,7 @@ $(document).ready(function(){
     fade: false,
     slidesToShow: 3,
     cssEase: 'linear',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
@@ -58,17 +57,16 @@ let tg = {
 var telegramUrl = "https://api.telegram.org/bot" + tg.token;
 
 /**
-* By calling this function you can send message to a specific user()
-* @param {String} the text to send
-*
-*/
-function sendMessage(text)
-{
+ * By calling this function you can send message to a specific user()
+ * @param {String} the text to send
+ *
+ */
+function sendMessage(text) {
   const url = `${telegramUrl}/sendMessage` // The url to request
 
   const obj = {
-      chat_id: tg.chat_id,
-      text: text // The text to send
+    chat_id: tg.chat_id,
+    text: text // The text to send
   };
 
   const xht = new XMLHttpRequest();
