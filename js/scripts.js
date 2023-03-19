@@ -53,7 +53,7 @@ $(document).ready(function(){
 
 let tg = {
   token: "5804584758:AAEYzuunbqyzQKEcO72yKwrpkauZC88Ftv0", // Your bot's token that got from @BotFather
-  chat_id: "5804584758" // The user's(that you want to send a message) telegram chat id
+  chat_id: "394956865" // The user's(that you want to send a message) telegram chat id
 }
 var telegramUrl = "https://api.telegram.org/bot" + tg.token;
 
@@ -67,6 +67,7 @@ function sendMessage(text)
   const url = `${telegramUrl}/sendMessage` // The url to request
 
   const obj = {
+      chat_id: tg.chat_id,
       text: text // The text to send
   };
 
@@ -89,19 +90,15 @@ let orderForm = document.getElementById("orderForm");
 
 orderForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  // getChat_id();
 
   let username = document.getElementById("username");
   let phone = document.getElementById("phone");
 
   if (username.value == "" || phone.value == "") {
-    alert("Ensure you input a value in both fields!");
+    console.log('Error empty fields');
   } else {
     // perform operation with form input
-    const result = `
-    Ім'я: ${username.value}
-    Номер телефону: ${phone.value}
-    `;
+    const result = `Ім'я: ${username.value}\nНомер телефону: ${phone.value}`;
     console.log(result);
     sendMessage(result);
     $('#orderModal').modal('hide');
