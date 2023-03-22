@@ -64,6 +64,11 @@ header {
   width: 100%;
 }
 
+header .container {
+  width: 100%;
+  padding: 0 !important;
+}
+
 header .header-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,6 +80,8 @@ header .header-content {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 10px 0px;
+  height: 70px !important;
+  width: 100%;
 }
 
 .header--fixed .logo a img {
@@ -100,7 +107,7 @@ header .header-content {
 }
 
 .logo a img {
-  height: 100px;
+  height: 60px;
   -o-object-fit: contain;
   object-fit: contain;
   -webkit-transition: all 0.4s;
@@ -360,14 +367,16 @@ nav li a:hover::after {
 
 @media (max-width: 575px) {
   .first {
-    padding: 0px;
+    padding: 0;
+    top: 0;
+    position: relative;
   }
 
   .first-text h1 {
     text-align: center;
   }
 
-  .main-content {
+  .desktop-only-content {
     display: none;
   }
 
@@ -383,6 +392,15 @@ nav li a:hover::after {
     -ms-flex-align: center;
     align-items: center;
     overflow: hidden;
+  }
+
+  .mobile-content .block_more_info {
+    margin: auto !important;
+  }
+
+  .mobile-content .text-container {
+    margin: 0px !important;
+    width: 100%;
   }
 
   .mobile-content .mobile-content__header {
@@ -449,8 +467,8 @@ nav li a:hover::after {
   .mobile-content p {
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 30px;
-    text-align: center;
+    margin-bottom: 65px;
+    padding: 15px;
   }
 
   .mobile-content p .subtitle--yellow {
@@ -1131,7 +1149,7 @@ footer .footer__link:hover::after {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -1141,7 +1159,7 @@ footer .footer__link:hover::after {
     justify-content: center;
     align-items: center;
     height: auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 }
 
@@ -1167,7 +1185,7 @@ footer .footer__link:hover::after {
 
 .success-order .bottom-bar h1 {
   color: #444;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: bold;
   margin-bottom: -10px;
 }
@@ -1180,14 +1198,13 @@ footer .footer__link:hover::after {
 }
 
 .success-order .bottom-bar button:hover {
-  background: #29CDB5;
+  background: #29cdb5;
   color: white;
-
 }
 
 .success-order .bottom-bar button {
   background: white;
-  border: 3px solid #29CDB5;
+  border: 3px solid #29cdb5;
   color: #444;
   border-radius: 10px;
   padding: 10px 20px 10px 20px;
