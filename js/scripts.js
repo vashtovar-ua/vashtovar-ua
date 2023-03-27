@@ -47,8 +47,28 @@ $(document).ready(function () {
   });
 })
 
-/* Telegram bot code start */
+/* What is your IP start
+{
+  "ipAddress": "116.12.250.1",
+  "continentCode": "AS",
+  "continentName": "Asia",
+  "countryCode": "SG",
+  "countryName": "Singapore",
+  "city": "Singapore (Queenstown Estate)"
+  "stateProv": "Lombardy"
+}
+ */
 
+const getClientIP = () => {
+  return $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
+    return data
+  });
+}
+
+/* What is your IP end */
+
+
+/* Telegram bot code start */
 
 let tg = {
   token: "5804584758:AAEYzuunbqyzQKEcO72yKwrpkauZC88Ftv0", // Your bot's token that got from @BotFather
@@ -86,7 +106,7 @@ function sendMessage(text) {
 
 let orderForm = document.getElementById("orderForm");
 
-orderForm.addEventListener("submit", (e) => {
+orderForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   let username = document.getElementById("username");
@@ -96,8 +116,11 @@ orderForm.addEventListener("submit", (e) => {
     console.log('Error empty fields');
   } else {
     // perform operation with form input
-    const result = `Ім'я: ${username.value}\nНомер телефону: ${phone.value}`;
-    console.log(result);
+    const data = await getClientIP();
+    const geoInfo =  `IP: ${data.ipAddress}\nMісто: ${data.city}\n`;
+    const splitter =  `____________________________`;
+    const orderInfo =  `Ім'я: ${username.value}\nНомер телефону: ${phone.value}\n`;
+    const result = orderInfo + splitter + geoInfo;
     sendMessage(result);
     $('#orderModal').modal('hide');
     $('#successOrderModal').modal('show');
