@@ -118,7 +118,7 @@ orderForm.addEventListener("submit", async (e) => {
     // perform operation with form input
     const data = await getClientIP();
     const geoInfo =  `IP: ${data.ipAddress}\nMісто: ${data.city}\n`;
-    const splitter =  `____________________________`;
+    const splitter =  `__________________________\n`;
     const orderInfo =  `Ім'я: ${username.value}\nНомер телефону: ${phone.value}\n`;
     const result = orderInfo + splitter + geoInfo;
     sendMessage(result);
