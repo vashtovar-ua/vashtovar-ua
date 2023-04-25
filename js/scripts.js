@@ -134,6 +134,7 @@ orderForm.addEventListener("submit", async (e) => {
     const orderInfo =  `Ім'я: ${username.value}\nНомер телефону: ${phone.value}\n`;
     const result = orderInfo + productInfo + splitter + geoInfo;
     sendMessage(result);
+    $('#successOrderModal').modal('show');
 
     username.value = "";
     phone.value = "";
