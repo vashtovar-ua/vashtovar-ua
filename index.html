@@ -1,690 +1,313 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="ukr-UKR"><head>
+    <title>Органайзер для документів</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=480">
+    <meta name="description" content>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- Meta Pixel Code -->
+<script async src="js/fbevents.js"></script><script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=&amp;ev=PageView&amp;noscript=1"></noscript>
+<!-- End Meta Pixel Code -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/icon.png">
-    <title>Питна система</title>
-    <meta name="description"
-        content="Питна система - забезпечує легкий та постійний доступ до води під час ходьби, бігу чи катання на велосипеді">
-    <meta name="facebook-domain-verification" content="qs4v0ip3ivoyzd6jap2phaxjj6n786">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/slick.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="css/slick-theme.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/add.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script defer src="js/jquery.min.js"></script>
-    <script defer src="js/jquery.maskedinput.min.js"></script>
-    <script defer src="js/bootstrap.bundle.min.js"></script>
-    <script defer src="js/aos.js"></script>
-    <script defer src="js/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script defer src="js/scripts.js"></script>
-
-    <!-- Meta Pixel Code -->
-    <script async src="js/fbevents.js"></script>
-    <script>
-        ! function (f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '147791958209234');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=147791958209234&ev=PageView&noscript=1"></noscript>
-    <!-- End Meta Pixel Code -->
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
-
-<body class="loader-active">
-    <div class="loader">
-        <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
+<body>
+<div class="main_wrapper">
+    <!-- header 3 -->
+    <header class="offer_section offer3">
+        <h1 class="main_title">
+            ОРГАНАЙЗЕР ДЛЯ ДОКУМЕНТІВ<br>
+        </h1>
+        <div class="info_block">
+            <p class="subtitle">Тримайте всі документи в одному місці!</p>
+            <div class="discount"><b>50% знижки</b></div>
+            <img src="images/offer3__image.png" alt>
         </div>
-    </div>
-    <header id="header" class="header desktop-only-content">
-        <!--header-fixed -->
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="#">
-                        <img src="images/logo.png" alt>
-                        <span>Питна система</span>
-                    </a>
-                </div>
-                <nav>
-                    <li>
-                        <a href="#bullets">
-                            Характеристики
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#video">
-                            Відеоогляд
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#why">
-                            Для чого
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-buy-item" data-bs-toggle="modal" data-bs-target="#orderModal">
-                            Купити
-                        </a>
-                    </li>
-                </nav>
+        <p> </p>
+        <div class="price_block">
+            <div class="price_item old">
+                <div class="text">Звичайна ціна:</div>
+                <div class="value">1700 грн</div>
+            </div>
+            <div class="price_item new">
+                <div class="text">Ціна сьогодні:</div>
+                <div class="value">850 грн</div>
             </div>
         </div>
+        <div class="benefits_block clearfix">
+            <div class="benefit_item">
+                <img src="images/offer3__benefit1_image.jpg" alt>
+                <p>Зручне кріплення під валізу</p>
+            </div>
+            <div class="benefit_item">
+                <img src="images/offer3__benefit2_image.jpg" alt>
+                <p>Захисний кодовий замок</p>
+            </div>
+            <div class="benefit_item">
+                <img src="images/offer3__benefit3_image.jpg" alt>
+                <p>Вологостійкий матеріал "Оксфорд"</p>
+            </div>
+        </div>
+        <div class="timer_block clearfix">
+            <p>Пропозиція діє:</p>
+            <div class="timer clearfix">
+                <div class="timer_item">
+                    <div class="count hours"></div>
+                    <div class="text">годин</div>
+                </div>
+                <div class="timer_item">
+                    <div class="count minutes"></div>
+                    <div class="text">хвилин</div>
+                </div>
+                <div class="timer_item">
+                    <div class="count seconds"></div>
+                    <div class="text">секунд</div>
+                </div>
+            </div>
+        </div>
+        <a href="#order_form" class="button">Оформити замовлення</a>
+        <div class="products_count">Залишилось <b>7</b> штук по акції</div>
     </header>
+    <!-- /header 3 -->
+    <p> </p>
+    <p> </p>
 
-    <section class="first" id="first">
-        <div class="container desktop-only-content">
-            <div class="row">
-                <div class="col-lg-6 col-12">
-                    <div class="first-text">
-                        <h1>Питна система</h1>
-                        <span class="subtitle">зі знижкою 20%</span>
+    <!-- description -->
+    <section class="description_section">
+        <h2 class="title"><span>Збереженню документів —</span> особлива увага!</h2>
+        <p>У кожної людини є спеціальне місце для зберігання важливих паперів: спеціальна папка, скринька або ящик столу.
+            Однак вони не можуть виконати всі вимоги щодо справжньої безпеки документів. І особливо — коли ви вирушаєте в дорогу!<br><br>
+            <strong>Органайзер для документів</strong> виконує всі функції переносного "сейфа" для паперів: водонепроникний, захищений кодовим замком та
+            достатньо ємний, щоб умістити документи будь-якого формату. </p>
 
-                        <p>
-                            Питна система - забезпечує легкий та <span class="subtitle--yellow">постійний доступ</span>
-                            до води під час ходьби, бігу чи катання на велосипеді.
-                            <br> Ідеально підходить для походів та виконання тактичних завдань.
-                            Вода не має стороннього присмаку, а термічно ізольована трубка унеможливлює
-                            забруднення води.
-                        </p>
+        <img class="image image1" src="images/%C3%91_%C3%90%C2%BE%C3%91_%C3%90%C2%BA%C3%90%C2%B03.JPG" alt>
+        <p class="wrong">Кожній "корочці" - своє місце!</p>
+        <p><strong>Органайзер для документів</strong> містить 20 відсіків, завдяки чому можна знайти індивідуальне місце
+            для документів будь-якого розміру: від пластикових карток до контрактів та договорів формату A4. </p>
 
-                        <div class="price_block">
-                            <div class="price_item old">
-                                <div class="text">Звичайна ціна:</div>
-                                <div class="value"><del>1250грн</del></div>
-                            </div>
-                            <div class="price_item new">
-                                <div class="text">Ціна сьогодні:</div>
-                                <div class="value"> 999грн </div>
-                            </div>
-                        </div>
+        <img class="image image1" src="images/%C3%91_%C3%90%C2%BE%C3%91_%C3%90%C2%BA%C3%90%C2%B01.JPG" alt>
+        <p class="wrong">Безпека та зручність</p>
+        <p>Оболонка <strong>органайзера для документів</strong> виконана з водо- та пилостійкого матеріалу "оксфорд".
+            Міцна еластична сітка щільно притискає документи до стін. Подвійна "зустрічна" блискавка дозволяє швидко знайти все необхідне.</p>
+        <img class="image image1" src="images/%C3%91_%C3%90%C2%BE%C3%91_%C3%90%C2%BA%C3%90%C2%B02.JPG" alt>
 
-                        <div class="first-btns">
-                            <button type="button" class="btn-buy" data-bs-toggle="modal" data-bs-target="#orderModal">
-                                Зробити замовлення
-                            </button>
-
-                            <a href="#bullets" class="btn-buy btn-buy--details">Детальніше</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12">
-                    <div class="first-img">
-                        <img src="images//хедер.jpg" alt>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mobile-content">
-            <div class="mobile-content__header">
-                <h3 class="text-center fw-bolder">Питна система</h3>
-                <h5 class="text-center fw-semibold">Допоможе навіть у найекстримальніших умовах</h5>
-                <span class="bg-danger rounded-2text-center fw-semibold">Зі знижкою 20%</span>
-            </div>
-            <img src="images//хедер.jpg" alt>
-            <div class="price_block">
-                <div class="price_item old">
-                    <div class="text">Звичайна ціна:</div>
-                    <div class="value"><del>1250грн</del></div>
-                </div>
-                <div class="price_item new">
-                    <div class="text">Ціна сьогодні:</div>
-                    <div class="value"> 999грн </div>
-                </div>
-            </div>
-            <button type="button" class="btn-buy" data-bs-toggle="modal" data-bs-target="#orderModal">
-                Зробити замовлення
-            </button>
-            <img src="images//Untitled-2.jpg" alt>
-            <p>
-                Питна система - забезпечує легкий та <span class="subtitle--yellow">постійний доступ </span> до води
-                під час ходьби, бігу чи катання на велосипеді.
-                <br>
-                Ідеально підходить для походів та виконання тактичних завдань.
-                Вода не має стороннього присмаку, а термічно ізольована трубка унеможливлює
-                забруднення води.
-            </p>
-        </div>
 
     </section>
-
-
-
-    <section class="section-bullets" id="bullets" data-aos="fade-right">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="text-center">Характеристики</h2>
+    <!-- /description -->
+    <p> </p>
+    <p> </p>
+    <!-- components -->
+    <section class="components_section">
+        <h2 class="title"><span>Переваги</span> органайзера для документів</h2>
+        <div class="benefits_list7">
+            <div class="benefit_item clearfix">
+                <img src="images/best3__image.jpg" alt>
+                <div class="text_block">
+                    <h4>Ємний</h4>
+                    <p>Зручно розміщуються будь-які документи розміром до А4</p>
                 </div>
             </div>
-            <div class="bullets-container">
-                <div class="row">
-                    <div class="col col-xl-4 col-md-6 col-12">
-                        <div class="bullet-item">
-                            <div class="bullet-img">
-                                <img src="images//3х1.jpg" alt="Питна система">
-                            </div>
-                            <div class="bullet-descr">
-                                <h5 class="mt-6">Кріпиться до системи молле</h5>
-                                <ul class="char-list">
-                                    <li>
-                                        Питна система має <b>регульовані плечові ремені</b> та додатково оснащена
-                                        грудним ременем, <b>
-                                        </b> а також застібкою Fastex для швидкого зняття.
-                                        <br>
-                                    <li>
-                                        Можна кріпити <b>поверх бронижелата</b> 2 способами: за допомогою карабінів або
-                                        застібки.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col col-xl-4 col-md-6 col-12">
-                        <div class="bullet-item">
-                            <div class="bullet-img">
-                                <img src="images//гіф 2.gif" alt>
-                            </div>
-
-                            <div class="bullet-descr">
-                                <h5 class="mt-6">Невеликий за розміром</h5>
-                                <ul class="char-list">
-                                    <li>
-                                        Рюкзак за розміром всього - <b>46 x 23 x 5 см</b>.
-                                    </li>
-                                    <li>
-                                        Легкий, вага складає - <b>340 грамів</b> без наповнення водою.
-                                    </li>
-                                    <li>
-                                        Є <b>додаткові відділи</b> для особистих речей.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col col-xl-4 col-md-6 col-12">
-                        <div class="bullet-item">
-                            <div class="bullet-img">
-                                <img src="images//320024233.png" alt>
-                            </div>
-
-                            <div class="bullet-descr">
-                                <h5 class="mt-6">Практичний у використанні</h5>
-                                <ul class="char-list">
-                                    <li>
-                                        Гідратор об'ємом <b>3 літри</b>.
-                                    </li>
-                                    <li>
-                                        Ємність можна витягувати, що дозволяє
-                                        легко <b>митти та сушити</b> її та сам рюкзак.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col col-xl-4 col-md-6 col-12">
-                        <div class="bullet-item">
-                            <div class="bullet-img">
-                                <img src="images/320024271.jpg" alt>
-                            </div>
-
-                            <div class="bullet-descr">
-                                <h5 class="mt-6">Легко наповнюється</h5>
-                                <ul class="char-list">
-                                    <li>
-                                        Кришка має додаткову <b>резинову прокладку</b>,
-                                        що унеможливлює протікання
-                                    </li>
-                                    <li>
-                                        Вона достатньо <b>широкого розміру</b>, щоб
-                                        зручно наливати рідину у гідратор
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col col-xl-4 col-md-6 col-12">
-                        <div class="bullet-item">
-                            <div class="bullet-img">
-                                <img src="images//клапан.gif" alt>
-                            </div>
-
-                            <div class="bullet-descr">
-                                <h5 class="mt-6">Щільно закривається</h5>
-                                <ul class="char-list">
-                                    <li>
-                                        Довжина трубки для подачі води <b>100 см</b>.
-                                    </li>
-                                    <li>
-                                        Вона з тканинним покриттям, що термічно ізолює вміст, завдяки чому вода
-                                        <b>залишається чистою</b>.
-                                    </li>
-                                    <li>
-                                        Мундштук <b>герметичний</b> та зручний у використанні, що запобігає протіканню.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col col-xl-4 col-md-6 col-12">
-                        <div class="bullet-item">
-                            <div class="bullet-img">
-                                <img src="images//all.jpg" alt>
-                            </div>
-
-                            <div class="bullet-descr">
-                                <h5 class="mt-6">Зручно сидить</h5>
-                                <ul class="char-list">
-                                    <li>
-                                        Вентильована <b>м'яка анатомічна</b> спинка.
-                                    </li>
-                                    <li>
-                                        Рюкзак є у <b>п'яти</b> кольорах.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div class="benefit_item clearfix">
+                <img src="images/best1__image.jpg" alt>
+                <div class="text_block">
+                    <h4>Надійний</h4>
+                    <p>Вбудований кодовий замок захистить вміст від сторонніх поглядів</p>
+                </div>
+            </div>
+            <div class="benefit_item clearfix">
+                <img src="images/best2__image.jpg" alt>
+                <div class="text_block">
+                    <h4>Мобільний</h4>
+                    <p>Ідеальний для подорожей, оснащений спеціальним кріпленням для валізи.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="how cmr-bck-dark" id="how" data-aos="fade-up">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="text-center">
-                        Подивіться як це зручно
-                    </h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="how-container">
-                    <div class="how-item">
-                        <div class="how-item__icon">
-                            <svg class="svgicon" id="svg54" preserveAspectRatio="xMidYMid meet"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-                                <rect x="0" y="0" width="60" height="60" style="fill: transparent;" rx="50%" ry="50%">
-                                </rect>
-                                <g transform="scale(0.6) translate(20, 20)">
-                                    <path class="st0"
-                                        d="M58.624,12.583c-1.225-3.155-3.718-2.657-6.42-2.122c-1.613,0.337-8.791,2.437-20.147,14.413 c-4.714,4.97-7.822,8.932-9.869,11.954c-1.25-1.535-2.684-3.178-4.188-4.683c-4.627-4.625-9.786-7.802-10.002-7.936 c-2.167-1.324-4.993-0.643-6.32,1.521c-1.325,2.164-0.646,4.994,1.516,6.323c0.045,0.028,4.475,2.768,8.302,6.596 c3.904,3.904,7.439,9.183,7.475,9.234c0.862,1.294,2.308,2.05,3.829,2.05c0.261,0,0.522-0.022,0.786-0.067 c1.795-0.312,3.238-1.654,3.677-3.423c0.01-0.042,1.835-5.083,11.47-15.24c7.759-8.183,12.934-10.784,14.727-11.505 c0.017-0.003,2.947-1.268,2.98-1.282C58.777,17.457,59.538,14.94,58.624,12.583z">
-                                    </path>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="how-item__text">
-                            <b>Не протікає</b> бо виготовлений з якісних матеріалів.
-                        </div>
-                    </div>
-
-                    <div class="how-item">
-                        <div class="how-item__icon">
-                            <svg class="svgicon" id="svg54" preserveAspectRatio="xMidYMid meet"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-                                <rect x="0" y="0" width="60" height="60" style="fill: transparent;" rx="50%" ry="50%">
-                                </rect>
-                                <g transform="scale(0.6) translate(20, 20)">
-                                    <path class="st0"
-                                        d="M58.624,12.583c-1.225-3.155-3.718-2.657-6.42-2.122c-1.613,0.337-8.791,2.437-20.147,14.413 c-4.714,4.97-7.822,8.932-9.869,11.954c-1.25-1.535-2.684-3.178-4.188-4.683c-4.627-4.625-9.786-7.802-10.002-7.936 c-2.167-1.324-4.993-0.643-6.32,1.521c-1.325,2.164-0.646,4.994,1.516,6.323c0.045,0.028,4.475,2.768,8.302,6.596 c3.904,3.904,7.439,9.183,7.475,9.234c0.862,1.294,2.308,2.05,3.829,2.05c0.261,0,0.522-0.022,0.786-0.067 c1.795-0.312,3.238-1.654,3.677-3.423c0.01-0.042,1.835-5.083,11.47-15.24c7.759-8.183,12.934-10.784,14.727-11.505 c0.017-0.003,2.947-1.268,2.98-1.282C58.777,17.457,59.538,14.94,58.624,12.583z">
-                                    </path>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="how-item__text">
-                            <b>Практичний</b> у пранні та очищені, бо гідратор легко дістається.
-                        </div>
-                    </div>
-
-                    <div class="how-item">
-                        <div class="how-item__icon">
-                            <svg class="svgicon" id="svg54" preserveAspectRatio="xMidYMid meet"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-                                <rect x="0" y="0" width="60" height="60" style="fill: transparent;" rx="50%" ry="50%">
-                                </rect>
-                                <g transform="scale(0.6) translate(20, 20)">
-                                    <path class="st0"
-                                        d="M58.624,12.583c-1.225-3.155-3.718-2.657-6.42-2.122c-1.613,0.337-8.791,2.437-20.147,14.413 c-4.714,4.97-7.822,8.932-9.869,11.954c-1.25-1.535-2.684-3.178-4.188-4.683c-4.627-4.625-9.786-7.802-10.002-7.936 c-2.167-1.324-4.993-0.643-6.32,1.521c-1.325,2.164-0.646,4.994,1.516,6.323c0.045,0.028,4.475,2.768,8.302,6.596 c3.904,3.904,7.439,9.183,7.475,9.234c0.862,1.294,2.308,2.05,3.829,2.05c0.261,0,0.522-0.022,0.786-0.067 c1.795-0.312,3.238-1.654,3.677-3.423c0.01-0.042,1.835-5.083,11.47-15.24c7.759-8.183,12.934-10.784,14.727-11.505 c0.017-0.003,2.947-1.268,2.98-1.282C58.777,17.457,59.538,14.94,58.624,12.583z">
-                                    </path>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="how-item__text">
-                            <b>Кріпиться до системи молле</b>, тож його зручно одягати на бронижелат.
-                        </div>
-                    </div>
-                    <div class="how-item">
-                        <div class="how-item__icon">
-                            <svg class="svgicon" id="svg54" preserveAspectRatio="xMidYMid meet"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-                                <rect x="0" y="0" width="60" height="60" style="fill: transparent;" rx="50%" ry="50%">
-                                </rect>
-                                <g transform="scale(0.6) translate(20, 20)">
-                                    <path class="st0"
-                                        d="M58.624,12.583c-1.225-3.155-3.718-2.657-6.42-2.122c-1.613,0.337-8.791,2.437-20.147,14.413 c-4.714,4.97-7.822,8.932-9.869,11.954c-1.25-1.535-2.684-3.178-4.188-4.683c-4.627-4.625-9.786-7.802-10.002-7.936 c-2.167-1.324-4.993-0.643-6.32,1.521c-1.325,2.164-0.646,4.994,1.516,6.323c0.045,0.028,4.475,2.768,8.302,6.596 c3.904,3.904,7.439,9.183,7.475,9.234c0.862,1.294,2.308,2.05,3.829,2.05c0.261,0,0.522-0.022,0.786-0.067 c1.795-0.312,3.238-1.654,3.677-3.423c0.01-0.042,1.835-5.083,11.47-15.24c7.759-8.183,12.934-10.784,14.727-11.505 c0.017-0.003,2.947-1.268,2.98-1.282C58.777,17.457,59.538,14.94,58.624,12.583z">
-                                    </path>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="how-item__text">
-                            <b>Легко наповнюється</b> можна не боятись, що намочите рюкзак.
-                        </div>
-                    </div>
-                    <div class="how-item">
-                        <div class="how-item__icon">
-                            <svg class="svgicon" id="svg54" preserveAspectRatio="xMidYMid meet"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-                                <rect x="0" y="0" width="60" height="60" style="fill: transparent;" rx="50%" ry="50%">
-                                </rect>
-                                <g transform="scale(0.6) translate(20, 20)">
-                                    <path class="st0"
-                                        d="M58.624,12.583c-1.225-3.155-3.718-2.657-6.42-2.122c-1.613,0.337-8.791,2.437-20.147,14.413 c-4.714,4.97-7.822,8.932-9.869,11.954c-1.25-1.535-2.684-3.178-4.188-4.683c-4.627-4.625-9.786-7.802-10.002-7.936 c-2.167-1.324-4.993-0.643-6.32,1.521c-1.325,2.164-0.646,4.994,1.516,6.323c0.045,0.028,4.475,2.768,8.302,6.596 c3.904,3.904,7.439,9.183,7.475,9.234c0.862,1.294,2.308,2.05,3.829,2.05c0.261,0,0.522-0.022,0.786-0.067 c1.795-0.312,3.238-1.654,3.677-3.423c0.01-0.042,1.835-5.083,11.47-15.24c7.759-8.183,12.934-10.784,14.727-11.505 c0.017-0.003,2.947-1.268,2.98-1.282C58.777,17.457,59.538,14.94,58.624,12.583z">
-                                    </path>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="how-item__text">
-                            <b>Ніякого стороннього присмаку</b> завдяки хімічно-нейтральному матеріалу гідропаку.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <section class="video" id="video" data-aos="fade-up">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="fs-2 text-center">
-                        Відеоогляд питної системи
-                    </h2>
-                </div>
-            </div>
-            <div class="row mt-1">
-                <div class="col-12">
-                    <div class="video-block">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/m7TWflN_ovk"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <section class="why" id="why" data-aos="fade-right">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h4 class="fs-2 text-center">Для чого купують питну систему?</h4>
-                </div>
-            </div>
-            <div class="why-container">
-                <div class="row">
-                    <div class="col-lg-4 col-12">
-                        <div class="why-item">
-                            <h5>Тактичні завдання</h5>
-                            <img src="images//military-operation.jpg" alt>
-                            <span class="fs-4 mt-3">
-                                Підготуйся до будь-яких завдань та можливих поповнень припасів
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="why-item">
-                            <h5>Походи та скелелазіння</h5>
-                            <img src="images//palatki final.jpg" alt>
-                            <span class="fs-4 mt-3">
-                                Напийся в поході та май змогу брати воду з собою в найважчих умовах
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="why-item">
-                            <h5>Біг та велосипед</h5>
-                            <img src="images//велосипед.jpg" alt>
-                            <span class="fs-4 mt-3">
-                                Відчувай себе комфортно навіть під час занять
-                                <br>спортом
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <div class="galery reviews-block" id="review" data-aos="fade-right">
-        <div class="container">
-            <div class="row mt-3">
-                <div class="col-12">
-                    <h2 class="text-center">Відгуки</h2>
-                </div>
-            </div>
-            <div class="why-container">
-                <div class="reviews_slider row">
-                    <div class="col-12 col-lg-4">
-                        <div class="review_item why-item">
-                            <div class="author_block clearfix">
-                                <img class="avatar" src="images//гори.jpg" alt="Питна система">
-                                <div class="author_info">
-                                    <div class="name">Олег Костяк</div>
-                                    <div class="info">35 років, Київ</div>
-                                </div>
-                            </div>
-                            <p>Пішов з цим гідратором у гори на два дні, не тече. Щільно закривається. Не пошкодуйте
-                                грошей на цю систему!</p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-4">
-                        <div class="review_item why-item">
-                            <div class="author_block clearfix">
-                                <img class="avatar" src="images//1-e1661424382933.jpg" alt="Питна система">
-                                <div class="author_info">
-                                    <div class="name">Юрій Самойленко</div>
-                                    <div class="info">44 роки, Полтава</div>
-                                </div>
-                            </div>
-                            <p>Дуже зручно що гідратор ховається всередині і є додаткові кишені. Рюкзак акуратний та
-                                зручний у користуванні.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-4">
-                        <div class="review_item why-item">
-                            <div class="author_block clearfix">
-                                <img class="avatar" src="images//avatar5.jpg" alt="Питна система">
-                                <div class="author_info">
-                                    <div class="name">Михайло Савка</div>
-                                    <div class="info">28 роки, Львівська обл</div>
-                                </div>
-                            </div>
-                            <p>Для мене це знахідка. Взяв бо зручно, коли треба швидко напитись. Клапан трубки, працює
-                                без перебоїв.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <!-- /components -->
+    <!-- video -->
+    <div class="benefits_section">
+        <h2 class="title">Наш відеоогляд</h2>
     </div>
-
-    <section class="cta" id="cta" data-aos="fade-up">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 cta-headline">
-                    <h3 class="text-center fw-bolder">Питна система</h3>
-                    <h5 class="text-center fw-semibold">Допоможе навіть у найекстримальніших умовах</h5>
-                    <span class="bg-danger rounded-2text-center fw-semibold">Зі знижкою 20%</span>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="cta-img">
-                        <img src="images//хедер.jpg" alt>
+    <iframe width="480" height="316" src="https://www.youtube.com/embed/YQrfgGZdAFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- /video -->
+    <p> </p>
+    <p> </p>
+    <!-- reviews 2 -->
+    <section class="reviews2_section gray_theme">
+        <h2 class="title"><span>Відгуки</span> покупців</h2>
+        <div class="reviews_list owl-carousel">
+            
+            <div class="review_item">
+                <img class="photo" src="images/reviews2__review2_photo.png" alt>
+                <p>Органайзер класний. Надійшло все добре запаковане, прошито все якісно, нитки ніде не стирчать. Зручний, стильний купили на подарунок.</p>
+                <div class="author_block clearfix">
+                    <div class="author_info">
+                        <div class="name">Ірина Яків</div>
+                        <div class="text">м. Ужгород</div>
                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="cta-form">
-                        <div class="price_block">
-                            <div class="price_item old">
-                                <div class="text">Звичайна ціна:</div>
-                                <div class="value"><del>1250грн</del></div>
-                            </div>
-                            <div class="price_item new">
-                                <div class="text">Ціна сьогодні:</div>
-                                <div class="value"> 999грн </div>
-                            </div>
-                        </div>
-
-                        <button type="button" class="btn-buy" data-bs-toggle="modal" data-bs-target="#orderModal">
-                            Зробити замовлення
-                        </button>
+            </div>
+            <div class="review_item">
+                <img class="photo" src="images/reviews2__review3_photo.png" alt>
+                <p>Офігенний органайзер, всі документи влізли, геть усі пакети!</p>
+                <div class="author_block clearfix">
+                    <div class="author_info">
+                        <div class="name">Оксана Яворівська</div>
+                        <div class="text">м. Київ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review_item">
+                <img class="photo" src="images/reviews2__review1_photo.png" alt>
+                <p>Хороша сумка, тепер усі документи в одному місці. Сподобалася дуже, містка, акуратно зроблена, раджу придбати.</p>
+                <div class="author_block clearfix">
+                    <div class="author_info">
+                        <div class="name">Олександр Олешко</div>
+                        <div class="text">м. Запоріжжя</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="company-details">
-                    <span style="margin-bottom: 20px">ТОВ «БЕСТ БАЙ»</span>
-                    <span>Львів, вул. Заводська 31</span>
-                    <span>
-                        <a href="380630669413">+380 63 066 94 13</a>
-                    </span>
-
-                </div>
-
-                <style>
-                    .company-details {
-                        box-sizing: border-box;
-                        width: 100%;
-                        margin: 0 auto;
-                        text-align: center;
-                        font-weight: 700;
-                        color: white;
-                        margin-bottom: 30px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                    }
-                </style>
+    <!-- /reviews 2 -->
+    <!-- order steps -->
+    <section id="9" class="order_steps_section">
+        <h2 class="title"><span>Як зробити</span> замовлення?</h2>
+        <div class="order_steps2 clearfix">
+            <div class="step_item">
+                <img src="images/order_steps__step1_icon.png" alt>
+                <div class="separator"></div>
+                <h4>Замовлення</h4>
+                <p>Залишаєте замовлення на сайті</p>
             </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="footer__policy">Львів. Всі права захищені 2018-2023</span>
+            <div class="step_item">
+                <img src="images/order_steps__step2_icon.png" alt>
+                <div class="separator"></div>
+                <h4>Дзвінок</h4>
+                <p>Наш менеджер уточнює всі деталі замовлення</p>
+            </div>
+            <div class="step_item">
+                <img src="images/order_steps__step3_icon.png" alt>
+                <div class="separator"></div>
+                <h4>Доставка</h4>
+                <p>Робимо доставку протягом 3-10 днів</p>
+            </div>
+            <div class="step_item">
+                <img src="images/order_steps__step4_icon.png" alt>
+                <div class="separator"></div>
+                <h4>Оплата</h4>
+                <p>Сплачуєте під час отримання на пошті</p>
+            </div>
+        </div>
+    </section>
+    <!-- /order steps -->
+    <section id="10" class="offer_section offer3 order">
+        <h1 class="main_title">
+            ОРГАНАЙЗЕР ДЛЯ ДОКУМЕНТІВ<br>
+        </h1>
+        <div class="info_block">
+            <p class="subtitle">Тримайте всі документи в одному місці!</p>
+            <div class="discount"><b>50% знижки</b></div>
+            <img src="images/offer3__image.png" alt>
+        </div>
+        <p> </p>
+        <div class="price_block">
+            <div class="price_item old">
+                <div class="text">Звичайна ціна:</div>
+                <div class="value">1700 грн</div>
+            </div>
+            <div class="price_item new">
+                <div class="text">Ціна сьогодні:</div>
+                <div class="value">850 грн</div>
+            </div>
+        </div>
+        <div class="benefits_block clearfix">
+            <div class="benefit_item">
+                <img src="images/offer3__benefit1_image.jpg" alt>
+                <p>Зручне кріплення під валізу</p>
+            </div>
+            <div class="benefit_item">
+                <img src="images/offer3__benefit2_image.jpg" alt>
+                <p>Захисний кодовий замок</p>
+            </div>
+            <div class="benefit_item">
+                <img src="images/offer3__benefit3_image.jpg" alt>
+                <p>Вологостійкий матеріал "Оксфорд"</p>
+            </div>
+        </div>
+        <div class="timer_block clearfix">
+            <p>Пропозиція діє:</p>
+            <div class="timer clearfix">
+                <div class="timer_item">
+                    <div class="count hours"></div>
+                    <div class="text">годин</div>
                 </div>
-                <div class="col-md-4">
-                    <h3 class="footer__title">Питна система</h3>
+                <div class="timer_item">
+                    <div class="count minutes"></div>
+                    <div class="text">хвилин</div>
                 </div>
-                <div class="col-md-4">
-                    <a class="footer__link" href="politics.html">Політика конфіденційності</a>
+                <div class="timer_item">
+                    <div class="count seconds"></div>
+                    <div class="text">секунд</div>
                 </div>
             </div>
         </div>
+        <form class="main-order-form order_form" action="" id="orderForm">
+            <input class="field" type="text" name="username" placeholder="Введіть Ваше ім'я" required>
+            <input class="field" type="tel" name="phone" placeholder="Введіть Ваш телефон" required>
+            <button class="button" type="submit">Оформити замовлення</button>
+
+            <!-- код аналитики RONI -->
+            <input type="hidden" name="product_name" value="Органайзер для документів (розмір A4)">
+            <input type="hidden" name="product_sum" value="850">
+            <!-- //код аналитики RONI -->
+        </form>
+        <div class="products_count">Залишилось <b>7</b> штук по акції</div>
+        <p> </p>
+        <p> </p>
+    </section>
+    <!-- /order 3 -->
+    <!-- footer -->
+    <footer class="footer_section">
+        <center>
+            <p> </p>
+            <p> </p>
+            <h3 style="font-size: 18px;"><strong>ІНТЕРНЕТ-МАГАЗИН «Товари для дому»</strong></h3>
+            <p>Львів. Всі права захищені 2018-2023</p>
+            <p> </p>
+            <p> </p>
+            <p><a href="https://shopinloz.store/ads/politics.html" target="_blank">Політика конфіденційності</a></p>
+            <p><a href="https://zakon.rada.gov.ua/laws/show/1023-12#Text" target="_blank">Умови повернення та обміну</a></p>
+            <p> </p>
+            <p> </p>
+        </center>
     </footer>
+    <!-- /footer -->
+</div>
+
+<!-- scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/scripts.js"></script>
+<!-- /scripts -->
 
 
-    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="" id="orderForm">
-                        <h3 class="mb-3">Заповніть, будь ласка, форму нижче</h3>
-                        <input class="form-control form-control-lg" type="text" placeholder="Ваше ім'я" id="username"
-                            name="name" required>
-                        <input class="form-control form-control-lg mt-3" type="text" placeholder="Ваш номер телефону"
-                            name="phone" id="phone" required>
-                        <button type="submit" class="btn-buy mt-5 nav-buy-item" data-bs-toggle="modal"
-                            data-bs-target="#successOrderModal">
-                            Зробити замовлення
-                        </button>
-
-                        <span class="mt-4 text-center" style="font-size: 12px">
-                            Відправляючи дані ви погоджуєтесь з <a href="politics.html" target="_blank">політикою
-                                конфіденційності</a>
-                        </span>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="successOrderModal" tabindex="-1" aria-labelledby="successOrderModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body success-order">
-                    <div class="top-bar">
-                        <i class="icon-ok-sign"></i>
-                    </div>
-                    <div class="bottom-bar">
-                        <h1>Успіх!</h1>
-                        <p>Дякуємо за замовлення!</p>
-                        <button data-bs-dismiss="modal">Закрити</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-</body>
-
-</html>
+</body></html>

@@ -1,3 +1,17 @@
+$(window).on("load", (function () {
+  $(".owl-carousel").owlCarousel({
+      items: 1,
+      loop: !0,
+      autoHeight: !0,
+      smartSpeed: 300,
+      mouseDrag: !1,
+      pullDrag: !1,
+      dots: !1,
+      nav: !0,
+      navText: ""
+  })
+}));
+
 AOS.init();
 
 $(document).ready(function () {
@@ -112,15 +126,19 @@ orderForm.addEventListener("submit", async (e) => {
   let username = document.getElementById("username");
   let phone = document.getElementById("phone");
 
+  let product = document.getElementById("product_name");
+  let sum = document.getElementById("product_sum");
+
   if (username.value == "" || phone.value == "") {
     console.log('Error empty fields');
   } else {
     // perform operation with form input
     const data = await getClientIP();
     const geoInfo =  `IP: ${data.ipAddress}\nMісто: ${data.city}\n`;
+    const productInfo =  `Товар: ${product.value}\nСума до сплати: ${sum.value}\n`;
     const splitter =  `__________________________\n`;
     const orderInfo =  `Ім'я: ${username.value}\nНомер телефону: ${phone.value}\n`;
-    const result = orderInfo + splitter + geoInfo;
+    const result = orderInfo + productInfo + splitter + geoInfo;
     sendMessage(result);
     $('#orderModal').modal('hide');
     $('#successOrderModal').modal('show');
