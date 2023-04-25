@@ -1,4 +1,26 @@
-$(window).on("load", (function () {
+$(document).ready((function () {
+  function t(t) {
+      return "<span>" + (t = ("00" + t).substr(-2))[0] + "</span><span>" + t[1] + "</span>"
+  }
+  $("a[href^='#']").click((function () {
+          var t = $(this).attr("href");
+          return $("html, body").animate({
+              scrollTop: $(t).offset().top + "px"
+          }), !1
+      })),
+      function e() {
+          var n = new Date,
+              a = new Date;
+          a.setHours(23), a.setMinutes(59), a.setSeconds(59), 23 === n.getHours() && 59 === n.getMinutes() && 59 === n.getSeconds && a.setDate(a.getDate() + 1);
+          var o = Math.floor((a.getTime() - n.getTime()) / 1e3),
+              i = Math.floor(o / 3600);
+          o -= 3600 * i;
+          var s = Math.floor(o / 60);
+          o -= 60 * s, $(".timer .hours").html(t(i)), $(".timer .minutes").html(t(s)), $(".timer .seconds").html(t(o)), setTimeout(e, 200)
+      }(), $(".order_form").submit((function () {
+          return "" == $(this).find("input[name='name']").val() && "" == $(this).find("input[name='phone']").val() ? (alert("Введите Ваши имя и телефон"), $(this).find("input[name='name']").focus(), !1) : "" == $(this).find("input[name='name']").val() ? (alert("Введите Ваше имя"), $(this).find("input[name='name']").focus(), !1) : "" != $(this).find("input[name='phone']").val() || (alert("Введите Ваш телефон"), $(this).find("input[name='phone']").focus(), !1)
+      }))
+})), $(window).on("load", (function () {
   $(".owl-carousel").owlCarousel({
       items: 1,
       loop: !0,
@@ -11,8 +33,6 @@ $(window).on("load", (function () {
       navText: ""
   })
 }));
-
-AOS.init();
 
 $(document).ready(function () {
   $('.loader').fadeOut(400)
@@ -35,31 +55,6 @@ $(window).scroll(function () {
   }
 });
 
-$(document).ready(function () {
-  $('.reviews_slider').slick({
-    dots: false,
-    infinite: true,
-    speed: 500,
-    fade: false,
-    slidesToShow: 3,
-    cssEase: 'linear',
-    responsive: [{
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-})
 
 /* What is your IP start
 {
@@ -112,7 +107,6 @@ function sendMessage(text) {
 // Now you can send any text(even a form data) by calling sendMessage function.
 // For example if you want to send the 'hello', you can call that function like this:
 
-// sendMessage("hello");
 
 /* Telegram bot code end */
 /* Form submit start */
@@ -135,13 +129,11 @@ orderForm.addEventListener("submit", async (e) => {
     // perform operation with form input
     const data = await getClientIP();
     const geoInfo =  `IP: ${data.ipAddress}\nMісто: ${data.city}\n`;
-    const productInfo =  `Товар: ${product.value}\nСума до сплати: ${sum.value}\n`;
+    const productInfo =  `Товар: ${product.value}\nСума до сплати: ${sum.value} UAH\n`;
     const splitter =  `__________________________\n`;
     const orderInfo =  `Ім'я: ${username.value}\nНомер телефону: ${phone.value}\n`;
     const result = orderInfo + productInfo + splitter + geoInfo;
     sendMessage(result);
-    $('#orderModal').modal('hide');
-    $('#successOrderModal').modal('show');
 
     username.value = "";
     phone.value = "";
