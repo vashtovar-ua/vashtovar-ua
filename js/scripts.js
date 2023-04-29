@@ -142,3 +142,9 @@ orderForm.addEventListener("submit", async (e) => {
   }
 });
 /* Form submit end */
+
+/* Scrolling section to order */
+function scrollToOrder() {
+  document.getElementById('order_form_section').scrollIntoView();
+}
+/* End Scrolling section to order */
